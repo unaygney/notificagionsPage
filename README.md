@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/notifications-page-U6tC0BJsXY))
-- Live Site URL: [Add live site URL here](https://unaygney.github.io/notificagionsPage/)
+- Solution URL: (https://www.frontendmentor.io/solutions/notifications-page-U6tC0BJsXY))
+- Live Site URL:(https://unaygney.github.io/notificagionsPage/)
 
 ## My process
 
