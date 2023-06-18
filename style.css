@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px */
+
+/* reset */
+
+* {
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red-color: hsl(1, 90%, 64%);
+    --blue-color: hsl(219, 85%, 26%);
+    --white-color: hsl(0, 0%, 100%);
+    --light-grayish-blue1: hsl(211, 68%, 94%);
+    --light-grayish-blue2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+}
+
+/* img */
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+}
+
+/* text class */
+
+.bold {
+    font-weight: 800;
+}
+
+p {
+    color: var(--very-dark-blue);
+    font-size: 14px;
+}
+
+.time {
+    margin: .3rem 0;
+    font-weight: 500;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+}
+
+.private-message {
+    border: 1px solid gray;
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+
+.blue {
+    color: var(--blue-color);
+    font-weight: 800;
+}
+
+.gray {
+    color: var(--dark-grayish-blue);
+    font-weight: 800;
+}
+
+
+/* body */
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-grayish-blue2);
+}
+
+section {
+    background-color: var(--white-color);
+    margin: 2rem;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    max-width: 800px;
+}
+
+section .notifications {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.number {
+    background-color: var(--blue-color);
+    display: inline-block;
+    width: 30px;
+    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    margin-left: .5rem;
+    border-radius: 4px;
+}
+
+.notifications h4 {
+    color: var(--dark-grayish-blue);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.notifications h4:hover {
+    opacity: 0.7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* notifications */
+.content .card.active {
+    background-color: var(--light-grayish-blue1);
+}
+
+.red-not {
+    background-color: var(--red-color);
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: .5rem;
+}
+
+.content .card {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 8px;
+    padding: .5rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
+
+#chess-img {
+    position: absolute;
+    right: 0;
+
+}
+
+/* mobile breakpoint */
+@media (max-width: 478px) {
+section{
+    margin: 0;
+    padding: 1rem;
+}
+
+#chess-img{
+    margin: 0 1rem;
+}
+  }
